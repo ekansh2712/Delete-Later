@@ -1,0 +1,4 @@
+Frameworkdesign\FrameworkDemo\Base.class
+pageObjects\forgotPassword.class
+pageObjects\loginPage2.class
+pageObjects\loginPage.class

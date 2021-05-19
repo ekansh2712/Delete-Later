@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+<listeners>
+<listener class-name="Frameworkdesign.FrameworkDemo.Listeners" />
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Frameworkdesign.FrameworkDemo.validatingTitle"/>
+      <class name="Frameworkdesign.FrameworkDemo.BasePageNavigation"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+<!-- We are using @AfterTest method in every class but the after test close command worked only after all the classes were executed and then all the windows got  closed at once, because in the testng.xml file all the classes are inside a single Test  -->
+<!-- If we want to get after test close results after each calss is executed then we have to giva a single class inside each test -->
+<!-- like -->
+<!-- <test thread-count="5" name="Test">
+    <classes>
+      <class name="Frameworkdesign.FrameworkDemo.validatingTitle"/>
+      </classes>
+      </test>
+      
+      <test thread-count="5" name="Test">
+    <classes>
+      <class name="Frameworkdesign.FrameworkDemo.BasePageNavigation"/>
+    </classes>
+  </test> -->

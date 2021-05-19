@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="Frameworkdesign.FrameworkDemo.Listeners"/>
+  </listeners>
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="Frameworkdesign.FrameworkDemo.validatingTitle">
+        <methods>
+          <include name="validateTitle"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Frameworkdesign.FrameworkDemo.validatingTitle -->
+      <class name="Frameworkdesign.FrameworkDemo.BasePageNavigation">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Frameworkdesign.FrameworkDemo.BasePageNavigation -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
